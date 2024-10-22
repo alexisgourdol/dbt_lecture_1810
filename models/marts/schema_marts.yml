@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: mart_sales
+    description: The products per country
+    columns:
+      - name: product_code
+        description: PK

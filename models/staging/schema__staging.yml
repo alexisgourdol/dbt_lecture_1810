@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stg_product_range
+    description: The products
+    columns:
+      - name: product_code
+        description: PK
+        tests:
+          - unique
+          - not_null
+      - name: country_of_origin
+        description: hello
+        data_tests:
+          - dbt_utils.not_empty_string

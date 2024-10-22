@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: beers_1810
+    tables:
+      - name: Product_range
+        description: The list of products
+        columns:
+          - name: Product_code
+            description: PK
+            data_tests:
+              - unique
+              - not_null
+      - name: Transactions
+        description: The transactions
